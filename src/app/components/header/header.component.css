@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    box-sizing: border-box; /* Ensures padding doesn't add to element width */
+}
+
+.section-sec {
+    background-color: #f8f9fa;
+    padding: 10px 0; /* Reduced padding for a tighter header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; /* Slightly reduced padding for tighter spacing */
+}
+
+.header-div img {
+    height: 50px; /* Slightly smaller height for better balance */
+    width: auto;
+    object-fit: contain;
+    margin-right: 20px; /* Adds spacing between logo and nav */
+}
+
+.ul-list {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Slightly reduced gap for compactness */
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Vertically centers list items with the image */
+}
+
+.ul-list li {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.ul-list li:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-div {
+        flex-direction: column;
+        align-items: center; /* Center items for a cleaner look */
+        padding: 10px 15px;
+    }
+
+    .header-div img {
+        margin-right: 0; /* Remove margin-right in column layout */
+        margin-bottom: 10px; /* Reduced spacing below logo */
+    }
+
+    .ul-list {
+        flex-direction: column;
+        gap: 10px; /* Tighter gap for mobile */
+        margin-top: 0; /* Remove extra margin */
+        align-items: center; /* Center-align list items */
+    }
+
+    .ul-list li {
+        font-size: 14px; /* Slightly smaller font for mobile */
+    }
+}

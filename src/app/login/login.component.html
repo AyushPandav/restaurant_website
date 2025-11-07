@@ -1,0 +1,31 @@
+<div class="container">
+  <!-- Login Form -->
+  <div class="login-container" id="login-container">
+    <div class="alert alert-danger" id="error-message" role="alert">
+      Invalid username or password!
+    </div>
+    <div class="login-form">
+      <h2>Login</h2>
+      <form [formGroup]="login" (ngSubmit)="loginserver()">
+        <div class="mb-3">
+            <label for="Username" class="pb-2" >Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Enter your username"  formControlName="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="mb-2" >Email</label>
+          <input type="email" class="form-control"  placeholder="Enter your Email" formControlName="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="mb-2" >Password</label>
+          <input type="password" class="form-control"  placeholder="Enter your password" formControlName="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-custom" (ngSubmit)="loginserver()">Login</button>
+        <div class="mt-3 text-center">
+          <a href="#" id="forgot-password-link">Forgot password?</a> |
+          <a href="#" id="register-link">Register</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  

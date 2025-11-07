@@ -1,0 +1,58 @@
+<app-header></app-header>
+
+<div class="container">
+  <!-- ✅ ngSubmit must be on form -->
+  <form class="booking-form" [formGroup]="formbooking" (ngSubmit)="store()">
+
+    <div class="form-group">
+      <label class="form-label" for="name">Name</label>
+      <input class="form-input" type="text" formControlName="name" id="name" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="phone">Phone No.</label>
+      <input class="form-input" type="tel" formControlName="phone" id="phone" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="phone">Password for email</label>
+      <input class="form-input" type="text" formControlName="password" id="password" required>
+    </div>
+
+
+    <div class="form-group">
+      <label class="form-label" for="email">Email</label>
+      <input class="form-input" type="email" formControlName="email" id="email" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="menu-option">Seats</label>
+      <select class="form-select" formControlName="seats" id="menu-option" required>
+        <option value="">-- Choose --</option>
+        <option *ngFor="let n of [1,2,3,4,5,6]" [value]="n">{{n}}</option>
+        <option value="7+">7+</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="date">Choose the Date</label>
+      <input class="form-input" type="date" formControlName="date" id="date" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="time">Choose the Time</label>
+      <select class="form-select" formControlName="time" id="time" required>
+        <option value="">-- Select Time --</option>
+        <option *ngFor="let t of ['10 PM','9 PM','8 PM','7 PM','6 PM','5 PM','4 PM','3 PM','2 PM','1 PM']" [value]="t">{{t}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <!-- ✅ button no longer needs ngSubmit -->
+      <button class="form-button" type="submit">Submit Your Booking</button>
+    </div>
+  </form>
+</div>
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>

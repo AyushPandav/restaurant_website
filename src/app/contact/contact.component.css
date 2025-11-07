@@ -1,0 +1,103 @@
+/* Base container */
+.container {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2.5rem 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form layout */
+.fs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Field group */
+.fs-field {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.fs-label {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Input & Textarea shared styles */
+.fs-input,
+.fs-textarea {
+  padding: 0.9rem 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.fs-input:focus,
+.fs-textarea:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.2);
+  outline: none;
+  background-color: #fff;
+}
+
+/* Textarea specific */
+.fs-textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* Descriptions */
+.fs-description {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+/* Button group */
+.fs-button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Button styles */
+.fs-button {
+  padding: 0.75rem 1.8rem;
+  background-color: #007acc;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.fs-button:hover {
+  background-color: #005f99;
+  transform: translateY(-1px);
+}
+
+.fs-button:active {
+  transform: scale(0.97);
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .container {
+    margin: 2rem 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .fs-button-group {
+    justify-content: center;
+  }
+}

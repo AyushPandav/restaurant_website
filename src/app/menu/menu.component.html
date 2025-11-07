@@ -1,0 +1,60 @@
+
+    <app-header></app-header>
+<div class="container"> 
+    <h1 class="mb-5">Our Menu</h1>
+ <div class="menu-container">
+
+
+    <div class="dish-card">
+      <img src="https://tb-static.uber.com/prod/image-proc/processed_images/d0281edfec182c4d9d24bd78498622a1/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg" alt="Pizza">
+      <div class="dish-details">
+        <h2>Margherita Pizza</h2>
+        <p>Classic cheese pizza with tomato sauce and fresh basil.</p>
+        <div class="price">₹299</div>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="https://avatars.mds.yandex.net/i?id=c6aabf7ca30be39a416ff4deaac32ee964e7814d-5644515-images-thumbs&n=13" alt="Burger">
+      <div class="dish-details">
+        <h2>Veggie Burger</h2>
+        <p>Grilled veggie patty with lettuce, tomato, and sauce.</p>
+        <div class="price">₹199</div>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="https://i0.wp.com/media-cldnry.s-nbcnews.com/image/upload/MSNBC/Components/Video/201910/tdy_food_daly_pasta_191002_1920x1080.jpg?resize=1200%2C1200&ssl=1" alt="Pasta">
+      <div class="dish-details">
+        <h2>Pasta Alfredo</h2>
+        <p>Creamy Alfredo pasta topped with herbs and parmesan.</p>
+        <div class="price">₹249</div>
+      </div>
+    </div>
+
+    <div class="dish-card">
+      <img src="https://avatars.mds.yandex.net/i?id=8cee63aef287138adf1635ed8a14d325b196ef8b-8269337-images-thumbs&n=13" alt="Salad">
+      <div class="dish-details">
+        <h2>Caesar Salad</h2>
+        <p>Fresh romaine lettuce with Caesar dressing and croutons.</p>
+        <div class="price">₹149</div>
+      </div>
+    </div>
+
+    <div *ngFor="let recipes of addthisrecipes" class="dish-card">
+      <img  [src]="recipes.foodimg" alt="Salad">
+      <div class="dish-details">
+        <h2>{{recipes.foodname}}</h2>
+        <p>{{recipes.fooddes}}</p>
+        <div class="price">₹{{recipes.foodprice}}</div>
+      </div>
+    </div>
+</div>
+</div>
+    <app-footer></app-footer>
+
+
+
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ayush",
+      "email": "ayush@example.com",
+      "password": "ayush@123"
+    },
+    {
+      "id": "2eb9",
+      "name": "Ayush Pandav",
+      "email": "ayush@gmail.com",
+      "password": "hellow"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1",
+      "foodname": "Pizza",
+      "foodprice": "800",
+      "fooddes": "Cheesy pizza availabel rn",
+      "foodimg": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/1600px-Supreme_pizza.jpg"
+    },
+    {
+      "id": "2eb9",
+      "foodname": "Burger",
+      "foodprice": "500",
+      "fooddes": "Chicken Burger with lots of flavors",
+      "foodimg": "https://tb-static.uber.com/prod/image-proc/processed_images/1bce9a3d11bb4ccfe43bc1d46c140b26/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "1",
+      "name": "Ayush Pandav",
+      "phone": 1478523690,
+      "password":"ayush@123",
+      "email": "ayush@example.com",
+      "seats": 5,
+      "date": "",
+      "time": ""
+    },
+    {
+      "id": "4be0",
+      "name": "Johnny",
+      "phone": "3412344312",
+      "password":"ayush@123",
+      "email": "fs22if025@gmail.com",
+      "seats": "2",
+      "date": "2025-08-29",
+      "time": "1 PM"
+    }
+  ]
+}
